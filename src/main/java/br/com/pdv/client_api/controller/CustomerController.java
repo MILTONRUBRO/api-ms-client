@@ -67,6 +67,7 @@ public class CustomerController {
     public ResponseEntity<Customer> find(@PathVariable String documentNumber) {
         log.info("GET Customer Document: {}", documentNumber);
         Customer customer = getCustomerInteractor.findCustomerByDocument(documentNumber);
+        log.info("GET Customer: {}", customer);
         return ResponseEntity.status(HttpStatus.OK).body(customer);
     }
 
