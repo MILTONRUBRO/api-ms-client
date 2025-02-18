@@ -105,7 +105,7 @@ jobs:
 
       - name: SonarQube Quality Gate Check
         run: |
-          sonar_status=$(curl -s -u ${{ secrets.SONAR_TOKEN }} "https://sonarcloud.io/api/qualitygates/project_status?projectKey=kaiquemotta_production")
+          sonar_status=$(curl -s -u ${{ secrets.SONAR_TOKEN }} "https://sonarcloud.io/api/qualitygates/project_status?projectKey=MILTONRUBRO_api-ms-client")
           
           quality_gate_status=$(echo $sonar_status | jq -r '.projectStatus.status')
           
