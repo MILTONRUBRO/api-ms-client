@@ -131,8 +131,8 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.13.15
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: "production-orders"
-          heroku_email: "kaique.motta@hotmail.com"
+          heroku_app_name: "api-ms-client"
+          heroku_email: "milton-rubro@hotmail.com"
 
   deploy_prod:
     runs-on: ubuntu-22.04
@@ -151,5 +151,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.13.15
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: "production-orders"
-          heroku_email: "kaique.motta@hotmail.com"
+          heroku_app_name: "api-ms-client"
+          heroku_email: "milton-rubro@hotmail.com"
