@@ -124,7 +124,7 @@ jobs:
 
       - name: Configurar variáveis no Heroku
         run: |
-          heroku config:set --app production-orders
+          heroku config:set --app api-ms-client
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 
